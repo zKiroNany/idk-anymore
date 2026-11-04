@@ -79,7 +79,7 @@ local ThemeManager = {
         --// Kyo: Sea Hub palette as the Default theme
         ["Default"] = {
             1,
-            { FontColor = "ffffff", MainColor = "331a47", AccentColor = "a4ff8e", BackgroundColor = "170f1c", OutlineColor = "4b316b", BackgroundImage = BackgroundBaseURL .. "mint-purple.jpg", AccentColor2 = "bc7df4", AccentGradient = true, FontFace = "ArimoBold", HeaderFont = "Bungee" },
+            { FontColor = "ffffff", MainColor = "331a47", AccentColor = "8a50f0", BackgroundColor = "170f1c", OutlineColor = "4b316b", BackgroundImage = BackgroundBaseURL .. "mint-purple.jpg", AccentColor2 = "5f22c4", AccentGradient = true, FontFace = "ArimoBold", HeaderFont = "Bungee" },
         },
         --// Kyo: community themes (colors, gradient, fonts and an original background image)
         ["Tokyo Ghoul"] = {
@@ -573,9 +573,9 @@ function ThemeManager:SetDefaultTheme(Theme: any)
     LibraryScheme.HeaderFont = ResolvedHeaderFont
     FinalTheme.HeaderFont = HeaderFontName
 
-    local SuccessGradient, Color2 = pcall(Color3.fromHex, Theme.AccentColor2 or "bc7df4")
+    local SuccessGradient, Color2 = pcall(Color3.fromHex, Theme.AccentColor2 or "5f22c4")
     if not SuccessGradient then
-        Color2 = Color3.fromHex("bc7df4")
+        Color2 = Color3.fromHex("5f22c4")
     end
     FinalTheme.AccentColor2 = Color2:ToHex()
     FinalTheme.AccentGradient = if typeof(Theme.AccentGradient) == "boolean" then Theme.AccentGradient else true

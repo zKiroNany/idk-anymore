@@ -679,11 +679,11 @@ local Library = {
 
     --// Scheme \\--
     IsLightTheme = false,
-    --// Kyo: mint to purple palette (same values as the Default theme of ThemeManager)
+    --// Kyo: purple palette (same values as the Default theme of ThemeManager)
     Scheme = {
         BackgroundColor = Color3.fromRGB(23, 15, 28),
         MainColor = Color3.fromRGB(51, 26, 71),
-        AccentColor = Color3.fromRGB(164, 255, 142),
+        AccentColor = Color3.fromRGB(138, 80, 240),
         OutlineColor = Color3.fromRGB(75, 49, 107),
         FontColor = Color3.fromRGB(255, 255, 255),
         Font = Font.fromEnum(Enum.Font.ArimoBold),
@@ -1948,11 +1948,11 @@ function Library:UpdateColorsUsingRegistry()
     Library:UpdateGradients() --// Kyo
 end
 
---// Kyo: accent gradient (default purple to pink)
+--// Kyo: accent gradient (default purple to dark purple)
 Library.WindowFading = false --// Kyo: hover tweens are skipped while the window fades, otherwise they undo the fade on the hovered element
 Library.Gradient = {
     Enabled = true,
-    Color2 = Color3.fromRGB(188, 125, 244),
+    Color2 = Color3.fromRGB(95, 34, 196),
 }
 local GradientTargets = setmetatable({}, { __mode = "k" })
 Library.GradientTargets = GradientTargets
