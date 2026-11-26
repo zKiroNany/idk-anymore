@@ -79,7 +79,7 @@ local ThemeManager = {
         --// Kyo: Sea Hub palette as the Default theme
         ["Default"] = {
             1,
-            { FontColor = "ffffff", MainColor = "331a47", AccentColor = "8a50f0", BackgroundColor = "170f1c", OutlineColor = "4b316b", BackgroundImage = BackgroundBaseURL .. "mint-purple.jpg", AccentColor2 = "5f22c4", AccentGradient = true, FontFace = "Bungee", HeaderFont = "Montserrat" },
+            { FontColor = "ffffff", MainColor = "331a47", AccentColor = "8a50f0", BackgroundColor = "170f1c", OutlineColor = "4b316b", BackgroundImage = BackgroundBaseURL .. "mint-purple.jpg", AccentColor2 = "5f22c4", AccentGradient = true, FontFace = "Montserrat", HeaderFont = "Bungee" },
         },
         --// Kyo: community themes (colors, gradient, fonts and an original background image)
         ["Tokyo Ghoul"] = {
